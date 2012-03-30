@@ -10,7 +10,8 @@
 	<project path="AndEngine" name="AndEngine"/>
 	<project path="AndEngineExamples" name="AndEngineExamples"/>
 	<project path="AndEngineAugmentedRealityExtension" name="AndEngineAugmentedRealityExtension"/>
-	<project path="AndEngineMODPlayerExtension" name="AndEngineMODPlayerExtension"/>
+	<project path="AndEngineMODPlayerExtension" name="AndEngineMODPlayerExtension"
+		revision="master"/>
 	<project path="AndEngineSVGTextureRegionExtension" name="AndEngineSVGTextureRegionExtension"/>
 	<project path="AndEngineMultiplayerExtension" name="AndEngineMultiplayerExtension"/>
 	<project path="AndEnginePhysicsBox2DExtension" name="AndEnginePhysicsBox2DExtension"/>
