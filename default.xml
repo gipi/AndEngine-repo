@@ -4,7 +4,7 @@
 		name="AndEngine"
 		fetch="git://github.com/nicolasgramlich/"
 		/>
-	<default revision="master"
+	<default revision="GLES2"
 		remote="AndEngine"
 		/>
 	<project path="AndEngine" name="AndEngine"/>
