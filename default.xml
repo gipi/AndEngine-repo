@@ -8,4 +8,13 @@
 		remote="AndEngine"
 		/>
 	<project path="AndEngine" name="AndEngine"/>
+	<project path="AndEngineExaple" name="AndEngineExample"/>
+	<project path="AndEngineAugmentedRealityExtension" name="AndEngineAugmentedRealityExtension"/>
+	<project path="AndEngineMODPlayerExtension" name="AndEngineMODPlayerExtension"/>
+	<project path="AndEngineSVGTextureRegionExtension" name="AndEngineSVGTextureRegionExtension"/>
+	<project path="AndEngineMultiplayerExtension" name="AndEngineMultiplayerExtension"/>
+	<project path="AndEnginePhysicsBox2DExtension" name="AndEnginePhysicsBox2DExtension"/>
+	<project path="AndEngineTMXTiledMapExtension" name="AndEngineTMXTiledMapExtension"/>
+	<project path="AndEngineTexturePackerExtension" name="AndEngineTexturePackerExtension"/>
+	<project path="AndEngineLiveWallpaperExtension" name="AndEngineLiveWallpaperExtension"/>
 </manifest>
