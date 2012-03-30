@@ -2,7 +2,7 @@
 <manifest>
 	<remote
 		name="AndEngine"
-		fetch="https://github.com/nicolasgramlich/"
+		fetch="git://github.com/nicolasgramlich/"
 		/>
 	<default revision="master"
 		remote="AndEngine"
