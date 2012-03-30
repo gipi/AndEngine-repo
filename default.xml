@@ -8,7 +8,7 @@
 		remote="AndEngine"
 		/>
 	<project path="AndEngine" name="AndEngine"/>
-	<project path="AndEngineExaple" name="AndEngineExample"/>
+	<project path="AndEngineExamples" name="AndEngineExamples"/>
 	<project path="AndEngineAugmentedRealityExtension" name="AndEngineAugmentedRealityExtension"/>
 	<project path="AndEngineMODPlayerExtension" name="AndEngineMODPlayerExtension"/>
 	<project path="AndEngineSVGTextureRegionExtension" name="AndEngineSVGTextureRegionExtension"/>
