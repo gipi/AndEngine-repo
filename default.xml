@@ -2,7 +2,7 @@
 <manifest>
 	<remote
 		name="AndEngine"
-		fetch="."
+		fetch="https://github.com/nicolasgramlich/"
 		/>
 	<project path="AndEngine" name="AndEngine"/>
 </manifest>
