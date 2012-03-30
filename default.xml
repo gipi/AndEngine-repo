@@ -4,5 +4,8 @@
 		name="AndEngine"
 		fetch="https://github.com/nicolasgramlich/"
 		/>
+	<default revision="master"
+		remote="AndEngine"
+		/>
 	<project path="AndEngine" name="AndEngine"/>
 </manifest>
