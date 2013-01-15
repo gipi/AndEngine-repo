@@ -1,0 +1,81 @@
+
+project AndEngineExamples/
+diff --git a/src/org/andengine/examples/BoundCameraExample.java b/src/org/andengine/examples/BoundCameraExample.java
+index 825b1aa..6a2ec2b 100644
+--- a/src/org/andengine/examples/BoundCameraExample.java
++++ b/src/org/andengine/examples/BoundCameraExample.java
+@@ -217,7 +217,8 @@ public class BoundCameraExample extends SimpleBaseGameActivity implements IAccel
+   private void addFace(final float pX, final float pY) {
+ 		final FixtureDef objectFixtureDef = PhysicsFactory.createFixtureDef(1, 0.5f, 0.5f);
+ 
+-		final AnimatedSprite face = new AnimatedSprite(pX, pY, this.mBoxFaceTextureRegion, this.getVertexBufferObjectManager()).animate(100);
++		final AnimatedSprite face = new AnimatedSprite(pX, pY, this.mBoxFaceTextureRegion, this.getVertexBufferObjectManager());
++        face.animate(100);
+ 		final Body body = PhysicsFactory.createBoxBody(this.mPhysicsWorld, face, BodyType.DynamicBody, objectFixtureDef);
+ 
+ 		this.mScene.attachChild(face);
+diff --git a/src/org/andengine/examples/HullAlgorithmExample.java b/src/org/andengine/examples/HullAlgorithmExample.java
+index 487755b..a259a4b 100644
+--- a/src/org/andengine/examples/HullAlgorithmExample.java
++++ b/src/org/andengine/examples/HullAlgorithmExample.java
+@@ -8,7 +8,7 @@ import org.andengine.entity.modifier.LoopEntityModifier;
+ import org.andengine.entity.modifier.ScaleModifier;
+ import org.andengine.entity.modifier.SequenceEntityModifier;
+ import org.andengine.entity.primitive.Mesh;
+-import org.andengine.entity.primitive.vbo.DrawMode;
++import org.andengine.entity.primitive.DrawMode;
+ import org.andengine.entity.scene.IOnSceneTouchListener;
+ import org.andengine.entity.scene.Scene;
+ import org.andengine.entity.scene.background.Background;
+diff --git a/src/org/andengine/examples/SplitScreenExample.java b/src/org/andengine/examples/SplitScreenExample.java
+index 5f81af7..b11ff57 100644
+--- a/src/org/andengine/examples/SplitScreenExample.java
++++ b/src/org/andengine/examples/SplitScreenExample.java
+@@ -176,7 +176,8 @@ public class SplitScreenExample extends SimpleBaseGameActivity implements IAccel
+ 	private void addFace(final float pX, final float pY) {
+ 		final FixtureDef objectFixtureDef = PhysicsFactory.createFixtureDef(1, 0.5f, 0.5f);
+ 
+-		final AnimatedSprite face = new AnimatedSprite(pX, pY, this.mBoxFaceTextureRegion, this.getVertexBufferObjectManager()).animate(100);
++		final AnimatedSprite face = new AnimatedSprite(pX, pY, this.mBoxFaceTextureRegion, this.getVertexBufferObjectManager());
++        face.animate(100);
+ 		final Body body = PhysicsFactory.createBoxBody(this.mPhysicsWorld, face, BodyType.DynamicBody, objectFixtureDef);
+ 
+ 		this.mScene.attachChild(face);
+diff --git a/src/org/andengine/examples/TextBreakExample.java b/src/org/andengine/examples/TextBreakExample.java
+index c36b877..f13a208 100644
+--- a/src/org/andengine/examples/TextBreakExample.java
++++ b/src/org/andengine/examples/TextBreakExample.java
+@@ -103,7 +103,7 @@ public class TextBreakExample extends SimpleLayoutGameActivity implements TextWa
+ 		scene.setBackground(new Background(0.09804f, 0.6274f, 0.8784f));
+ 
+ 		final VertexBufferObjectManager vertexBufferObjectManager = this.getVertexBufferObjectManager();
+-		this.mText = new Text(50, 40, this.mFont, "", 1000, new TextOptions(AutoWrap.LETTERS, AUTOWRAP_WIDTH, Text.LEADING_DEFAULT, HorizontalAlign.CENTER), vertexBufferObjectManager);
++		this.mText = new Text(50, 40, this.mFont, "", 1000, new TextOptions(AutoWrap.LETTERS, AUTOWRAP_WIDTH, HorizontalAlign.CENTER, Text.LEADING_DEFAULT), vertexBufferObjectManager);
+ 		scene.attachChild(this.mText);
+ 
+ 		this.mLeft = new Line(0, 0, 0, TextBreakExample.CAMERA_HEIGHT, this.getVertexBufferObjectManager());
+
+project AndEngineScriptingExtensionGenerator/
+diff --git a/generate.sh b/generate.sh
+index d8ffcb2..4095c59 100755
+--- a/generate.sh
++++ b/generate.sh
+@@ -1,8 +1,8 @@
+ #!/bin/bash
+ 
+-ANDENGINE_SCRIPTINGEXTENSION_GENERATOR_ROOT="/Users/ngramlich/Workspace/gdk/graphic_engines/AndEngine/AndEngineScriptingExtensionGenerator/"
+-ANDENGINE_ROOT="/Users/ngramlich/Workspace/gdk/graphic_engines/AndEngine/AndEngine/"
+-ANDENGINE_SCRIPTINGEXTENSION_ROOT="/Users/ngramlich/Workspace/gdk/graphic_engines/AndEngine/AndEngineScriptingExtension/"
++ANDENGINE_SCRIPTINGEXTENSION_GENERATOR_ROOT="$PWD/../AndEngineScriptingExtensionGenerator/"
++ANDENGINE_ROOT="$PWD/../AndEngine/"
++ANDENGINE_SCRIPTINGEXTENSION_ROOT="$PWD/../AndEngineScriptingExtension/"
+ 
+ 
+ pushd ${ANDENGINE_SCRIPTINGEXTENSION_GENERATOR_ROOT}bin > /dev/null
+@@ -174,4 +174,4 @@ echo " done!"
+ echo "# Done."
+ echo "####################################"
+ 
+-popd > /dev/null
+\ No newline at end of file
++popd > /dev/null
