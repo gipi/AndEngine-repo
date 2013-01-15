@@ -1,0 +1,16 @@
+Since is boring to download manually each repository for test
+the example application of AndEngine you can use the manifest
+file in this repository with repo following the commands below
+
+ $ mkdir AndEngineRepo
+ $ cd AndEngineRepo
+ $ repo init -u https://github.com/gipi/AndEngine-repo.git
+ $ repo sync
+ $ for i in $(ls ); do echo \> $i;cd $i;android update project -p .;cd ..; done
+ $ cd AndEngineExamples
+ $ ant debug
+
+If you don't have repo installed you can download directly from Google
+
+ $ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+ $ chmod a+x ~/bin/repo
