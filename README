@@ -14,3 +14,6 @@ If you don't have repo installed you can download directly from Google
 
  $ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
  $ chmod a+x ~/bin/repo
+
+If there are some compilation errors look for a .patch file in this repo: when possible
+I try to compile all and fix the possible.
