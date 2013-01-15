@@ -4,6 +4,10 @@
 		name="AndEngine"
 		fetch="git://github.com/nicolasgramlich/"
 		/>
+	<remote
+		name="fix"
+		fetch="git://github.com/jberkel/"
+		/>
 	<default revision="GLES2"
 		remote="AndEngine"
 		/>
@@ -13,7 +17,10 @@
 	<project path="AndEngineMODPlayerExtension" name="AndEngineMODPlayerExtension"
 		revision="master"/>
 	<project path="AndEngineSVGTextureRegionExtension" name="AndEngineSVGTextureRegionExtension"/>
-	<project path="AndEngineMultiplayerExtension" name="AndEngineMultiplayerExtension"/>
+	<project path="AndEngineMultiplayerExtension" name="AndEngineMultiplayerExtension"
+		remote="fix"
+		revision="fix-javac-compilation"
+		/>
 	<project path="AndEnginePhysicsBox2DExtension" name="AndEnginePhysicsBox2DExtension"/>
 	<project path="AndEngineTMXTiledMapExtension" name="AndEngineTMXTiledMapExtension"/>
 	<project path="AndEngineTexturePackerExtension" name="AndEngineTexturePackerExtension"/>
